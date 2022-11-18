@@ -11,7 +11,7 @@ class Destini extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: StoryPage(),
+      home: const StoryPage(),
     );
   }
 }
@@ -22,6 +22,7 @@ class StoryPage extends StatefulWidget {
   const StoryPage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _StoryPageState createState() => _StoryPageState();
 }
 
